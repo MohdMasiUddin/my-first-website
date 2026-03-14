@@ -1,44 +1,28 @@
-import { useState } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import About from './about.jsx'
-import Contact from './contact.jsx'
-
-function Home() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>SAM</div>
-      <h1>SAM</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          SAM
-        </p>
-      </div>
-      <p className="read-the-docs">
-        SAM
-      </p>
-    </>
-  )
-}
+import Navbar from './components/Navbar.jsx'
+import Home from './components/Home.jsx'
+import About from './components/about.jsx'
+import Contact from './components/contact.jsx'
+import Footer from './components/footer.jsx'
+import Education from './components/Education.jsx'
+import Projects from './components/Projects.jsx'
+import Experience from './components/Experience.jsx'
 
 function App() {
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link> |{' '}
-        <Link to="/about">About</Link> |{' '}
-        <Link to="/contact">Contact</Link>
-      </nav>
+      <Navbar />
+      <Home />
+      <div className="container"><Education /></div>
+     <div className="container"><Projects /></div>
+      <div className="container"><Experience /></div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   )
 }
