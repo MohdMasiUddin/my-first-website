@@ -844,3 +844,49 @@ footer p {
   }
 }
 
+/* Hero Buttons Container */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Resume Download Button */
+.resume-button {
+  background: transparent;
+  color: #38a169;
+  border: 2px solid #38a169;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.resume-button:hover {
+  background: #38a169;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(56, 161, 105, 0.3);
+}
+
+/* Responsive styles for hero buttons */
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .cta-button,
+  .resume-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
