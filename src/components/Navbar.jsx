@@ -10,9 +10,9 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="nav-brand">Sam's Portfolio</div>
+      <div className="nav-brand">Mohd Masi Uddin's Portfolio</div>
       <div className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-        <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Homie</Link>
+        <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
         <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
         <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
       </div>

@@ -3,9 +3,8 @@ import React from 'react'
 
 function Education() {
   const educationData = [
-    { institution: 'St Josephs Degree College', degree: 'Bachelor of Computer Applications', years: '2023 - 2026' },
-    { institution: 'St Josephs Junior College', degree: 'Commerce', years: '2021-2023' },
-    { institution: 'Key High School ', degree: '10th', years: '2020-2021' }
+    { institution: 'St Joseph Junior College, Tolichowki', degree: 'Intermediate', years: '2021-2023', gpa: '64%' },
+    { institution: 'Key High School, Tolichowki', degree: 'Secondary School', years: '2020-2021', gpa: '85%' }
   ]
 
   return (
@@ -14,7 +13,7 @@ function Education() {
       <ul>
         {educationData.map((edu, index) => (
           <li key={index}>
-            <strong>{edu.institution}</strong> - {edu.degree} ({edu.years})
+            <strong>{edu.institution}</strong> - {edu.degree} ({edu.years}) - GPA: {edu.gpa}
           </li>
         ))}
       </ul>

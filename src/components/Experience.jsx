@@ -3,8 +3,7 @@ import React from 'react'
 
 function Experience() {
   const experienceData = [
-    { company: 'Tech Company', role: 'Software Engineer', years: '2024 - Present' },
-    { company: 'Startup Inc.', role: 'Frontend Developer', years: '2023 - 2024' }
+    { company: 'Fresher', role: 'Open to Opportunities', years: 'Seeking Entry-level Position' }
   ]
 
   return (
